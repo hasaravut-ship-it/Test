@@ -6,19 +6,10 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
  <!-- 🔐 AUTH CHECK (put here) -->
   <script>
-    if (SessionStorage.getItem("auth") !== "true") {
+    if (sessionStorage.getItem("auth") !== "true") {
       window.location.href = "login.html";
     }
   </script>
-
-
-
-<script>
-function logout() {
-  SessionStorage.removeItem("auth");
-  window.location.href = "login.html";
-}
-</script>
 
 <title>WAN Rollout — Executive Dashboard</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
