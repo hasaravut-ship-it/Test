@@ -5,7 +5,7 @@ function login() {
   // hardcoded (demo only)
   if (user === "admin" && pass === "1234") {
     // store login state
-    SessionStorage.setItem("auth", "true");
+    sessionStorage.setItem("auth", "true");
 
     // redirect to main page
     window.location.href = "index.html";
