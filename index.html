@@ -4,12 +4,13 @@
 <script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
- <!-- 🔐 AUTH CHECK (put here) -->
-  <script>
-    if (sessionStorage.getItem("auth") !== "true") {
-      window.location.href = "login.html";
-    }
-  </script>
+ 
+
+ <script>
+  if (sessionStorage.getItem("auth") !== "true") {
+    window.location.href = "login.html";
+  }
+</script>
 
 <title>WAN Rollout — Executive Dashboard</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
